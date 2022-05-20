@@ -35,8 +35,22 @@ main{
     padding: 14px 0 0 0; /*sentido horário do Top, Right, Bottom e Left*/
 }
 
-#bannertop {
-    width: 100%;
+.imgname {
+    height: 300px;
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 45px;
+    background-color: rgb(207, 138, 253);
+    border-radius: 12px;
+    padding: 15px;
+    border-color: rgb(98, 4, 160);
 }
 
 #textostop {
@@ -242,6 +256,50 @@ main form {
     align-items: center;
 }
 
+main form input {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(98, 4, 160);
+}
+
+main form input:focus {
+    outline: none;
+    border-color: rgb(207, 138, 253);
+}
+
+main form label {
+    margin: 11px 0 0 0;
+}
+
+main form textarea {
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(98, 4, 160);
+}
+
+main form textarea:focus {
+    outline: none;
+    border-color: rgb(207, 138, 253);
+}
+
+main form button {
+    width: 300px;
+    margin: 20px 0 0 0;
+    border-radius: 5px;
+    border: 2px solid rgb(98, 4, 160);
+    background-color: rgba(98, 4, 160, 0.418);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0 35px 0;
+}
+
+main form button:hover {
+    color: black;
+    background-color: rgb(207, 138, 253);
+
+}
 
 /*configurações mobille*/
 

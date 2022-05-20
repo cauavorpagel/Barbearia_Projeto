@@ -30,7 +30,9 @@
 
     <main>
         <section>
-            <img  id="bannertop" src="img/banner.jpg" alt="Banner Barbearia do Contoso">
+            <div class="imgname">
+                <h2>Olá Jovem...</h2>
+            </div>
             
             <div id="textostop">
                 <p class="titulo">Sobre a Barbearia Contoso</p>
@@ -147,12 +149,21 @@
     
     </footer>
 
+<script>
+    const h2 = document.querySelector("h2");
+
+    h2.onclick = function () {
+        const userName = prompt("Qual é seu nome");
+    
+        h2.textContent =`Olá... ${userName} Seja Bem Vindo!`
+        
+        if(!userName) {
+            h2.textContent = 'Olá... Visitante Seja Bem Vindo'
+        }
+    }
 
 
 
-
-
-
-
+</script>
 </body>
 </html>
